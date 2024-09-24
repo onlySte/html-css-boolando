@@ -19,39 +19,37 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    gap: 10px;
+    gap: 50px 10px;
     padding: 20px;
 }
 
 .prodotti .prodotto-carta {
     flex-basis: 30%;
-    background-color: rgb(205, 204, 204);
+    /* background-color: rgb(205, 204, 204); */
     min-height: 300px;
     position: relative;
 }
 
 /* immagini */
-img {
+
+.prodotto-carta .immagine img {
     width: 100%;
     height: 100%;
 }
 
-.immagine>.add-img {
+.prodotto-carta .immagine .secondaria {
     display: none;
 }
 
-/* .prodotto-carta:hover .add-img {
-    display: block;
-} */
-
-.prodotto-carta:hover>.immagine {
+.prodotto-carta:hover .immagine .principale {
     display: none;
 }
 
-.prodotto-carta:hover>.immagine>.add-img {
+.prodotto-carta:hover .immagine .secondaria {
     display: block;
 }
 
+/* sezione sconto */
 .red {
     position: absolute;
     bottom: 20px;
@@ -74,4 +72,27 @@ img {
     transform: translate(-100%, -100%);
     background-color: white;
     padding: 0 10px;
+}
+
+.prodotto-carta>.informazioni {
+    position: absolute;
+    font-size: 10px;
+    bottom: -36px;
+}
+
+/* .informazioni:nth-child(1) {
+    color: gray;
+}
+
+.informazioni:nth-child(3) {
+    color: red;
+} */
+
+.numero-rosso {
+    color: red;
+}
+
+.informazioni>p {
+    font-size: 11px;
+    font-weight: bold;
 }
